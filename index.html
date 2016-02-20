@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kana Mahjong</title>
+        <meta charset="utf-8">
+    </head>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    </head>
+<body>
+    <div id="splash">
+        <div id="playbutton"></div>
+    </div>
+    <div id="scorecard" class="menu padded hidden">
+        <div class="score">
+            <span class="biginfo" id="scorecard_complete">144</span>
+            <span class="biginfo">/</span>
+            <span class="biginfo" id="scorecard_total">144</span>
+            <span class="smallinfo">complete</span>
+         </div>       
+         <div class="mistakes">
+            <span class="biginfo" id="scorecard_mistakes">0</span>
+            <span class="smallinfo">mistakes</span>
+         </div>
+    </div>
+    <div id="menudiv" class="menu padded hidden">
+        <div id="menubutton" class="bigbutton">GO!</div>
+        <div id="menucontent">
+        <form id="menuform" name="menuform">
+        <div class="elementsgroup">
+            <div class="groupheader">Matching</div></br>
+            <input type="radio" name="matching" id="matching_0" value="Hiragana-Romaji" checked>Hiragana-Romaji<br />
+            <input type="radio" name="matching" id="matching_1" value="Katakana-Romaji">Katakana-Romaji<br />
+            <input type="radio" name="matching" id="matching_2" value="Hiragana-Kiriji">Hiragana-Kiriji<br />
+            <input type="radio" name="matching" id="matching_3" value="Katakana-Kiriji">Katakana-Kiriji<br />
+            <input type="radio" name="matching" id="matching_4" value="Hiragana-Katakana">Hiragana-Katakana<br />
+        </div>
+        <div class="elementsgroup">
+            <div class="groupheader">Variants</div><br />
+            <table width="100%" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td><input type="checkbox" name="variants_a" checked>A</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="variants_ka" checked>KA</td>
+                    <td><input type="checkbox" name="variants_ga" checked>GA</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="variants_sa" checked>SA</td>
+                    <td><input type="checkbox" name="variants_za" checked>ZA</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="variants_ta" checked>TA</td>
+                    <td><input type="checkbox" name="variants_da" checked>DA</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="variants_na" checked>NA</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="variants_ha" checked>HA</td>
+                    <td><input type="checkbox" name="variants_ba" checked>BA</td>
+                    <td><input type="checkbox" name="variants_pa" checked>PA</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="variants_ma">MA</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="variants_ya">YA</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="variants_ra">RA</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="variants_wan">WA / N</td>
+                </tr>
+            </table>
+        </div>
+        </div>
+        </form>
+    </div>
+    <div id="board"></div>
+</body>
+<script type="text/javascript" src="js/interface.js"></script>
+<script type="text/javascript" src="js/variants.js"></script>
+<script type="text/javascript" src="js/layout.js"></script>
+<script type="text/javascript" src="js/tile.js"></script>
+<script type="text/javascript" src="js/blink.js"></script>
+<script type="text/javascript" src="js/game.js"></script>
+<script>
+
+</script>
+</html>

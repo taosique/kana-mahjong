@@ -1,0 +1,158 @@
+@font-face {
+	font-family: "HGSeikaishotaiPRO";
+	src: url("../ttf/hgrskp.ttf");
+}
+
+@font-face {
+	font-family: "HakushuKaishoKK";
+	src: url("../ttf/hkkaikk.ttf");
+}
+
+body {
+	padding: 0;
+	border: 0;
+	margin: 0;
+
+	background-color: #033815;
+	background-image: url("../img/table_background.png");
+	background-repeat: repeat;
+
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+div#playbutton {
+	width: 200px;
+	height: 60px;
+	position: relative;
+	top: 304px;
+	left: 616px;
+
+	background-image: url("../img/play.png");
+	background-position: top left;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+div#splash {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+	width: 891px;
+	height: 433px;
+	margin-top: -215px;
+	margin-left: -445px;
+
+	background-image: url("../img/splash.png");
+	background-position: top left;
+	background-repeat: no-repeat;
+}
+
+div.menu {
+	background-color: #FFFFFF;
+	border: 0;
+	width: 160px;
+	margin: 40px;
+	opacity: 0.9;
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
+}
+div.padded {
+	padding: 20px;
+}
+div.bigbutton {
+	width: 100%;
+	font-family: Trebuchet MS;
+	font-size: 24px;
+	color: #3399CC;
+	font-weight: bold;
+	text-align: center;
+	white-space: nowrap;
+	cursor: pointer;
+}
+div.score, div.mistakes {
+	font-family: Trebuchet MS;
+	text-align: left;
+}
+div.score {
+	color: #000000;
+}
+div.mistakes {
+	color: #FF0000;
+}
+span.biginfo {
+	font-size: 19px;
+	font-weight: bold;
+}
+span.smallinfo {
+	font-size: 14px;
+}
+div.elementsgroup {
+	border: #AAAAAA 1px solid;
+	padding: 10px;
+	margin: 20px 0px 0px 0px;
+	font-family: Trebuchet MS;
+	color: #000000;
+	font-size: 14px;	
+}
+div.elementsgroup .groupheader {
+	background-color: #FFFFFF;
+	padding: 0 5px;
+	position: relative;
+	top: -20px;
+	left: 0;
+	font-family: Trebuchet MS;
+	color: #333333;
+	font-size: 14px;
+	font-weight: bold;
+	display: inline;
+}
+.hidden {
+	display: none;
+}
+
+div#board div {
+	margin: 40px 280px;
+}
+
+div.tile {
+	position: absolute;
+
+	vertical-align: top;
+
+	line-height: 72px;
+	text-align: center;
+	text-indent: -7px;
+
+	background-image: url("../img/tile.png");
+	background-position: top left;
+	background-repeat: no-repeat;
+
+	cursor: pointer;
+}
+div.tile:hover {
+	background-image: url("../img/tile_highlighted.png");
+}
+div.highlighted {
+	background-image: url("../img/tile_highlighted.png");
+}
+div.good, div.good:hover {
+	background-image: url("../img/tile_good.png");
+}
+div.bad, div.bad:hover {
+	background-image: url("../img/tile_bad.png");
+}
+.kana {
+	color: #000000;
+	font-family: HGSeikaishotaiPRO;
+	font-size: 40px;
+}
+.western {
+	color: #CC0000;
+	font-family: Trebuchet MS;
+	font-size: 25px;
+}
